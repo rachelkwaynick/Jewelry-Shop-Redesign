@@ -1,0 +1,31 @@
+@import "../../../styles.scss";
+
+.footer {
+    background-color: $themedark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $fontlight;
+
+    .address {
+        margin: 5px auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .phone {
+        margin: 0 auto;
+        
+    }
+
+    .social {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+
+        .icon {
+            margin: 5px;
+        }
+    }
+}
