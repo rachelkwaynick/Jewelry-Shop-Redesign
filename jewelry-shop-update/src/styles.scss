@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "theme.scss";
+
 * {
     box-sizing: border-box;
+}
+
+body {
+    background-color: $background;
 }
 
 html,body,ul,ol {

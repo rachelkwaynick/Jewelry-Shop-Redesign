@@ -2,6 +2,8 @@
 
 header {
     padding: 10px;
+    background-color: $themelight;
+
     nav {
         display: flex;
         justify-content: space-around;
@@ -10,9 +12,22 @@ header {
         .nav-item {
             padding: 10px;
             background-color: $themedark;  
+            box-shadow: $boxshadow;
+            border-radius: 3px;
 
             a {
                 color: $fontlight;
+                text-transform: uppercase;
+            }
+        }
+
+        .logo {
+            max-width: 20%;
+
+            a {
+                img {
+                    max-width: 100%;
+                }
             }
         }
     }
