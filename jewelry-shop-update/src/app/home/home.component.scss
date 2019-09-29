@@ -1,0 +1,53 @@
+@import "../../theme.scss";
+
+.home {
+
+    .rotator {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .featured {
+        background-color: $themelightest;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        box-shadow: $boxshadow;
+
+        .feature-item {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+    }
+
+    .owner {
+        display: flex;
+        margin: 10px;
+
+        .owner-image {
+            max-width: 25%;
+            margin: 10px;
+
+            img {
+                max-width: 100%;
+                box-shadow: $boxshadow;
+            }
+        }
+
+        .owner-message {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .welcome {
+                padding: 5px;
+            }
+
+            .message {
+                padding: 5px;
+            }
+        }
+    }
+}
