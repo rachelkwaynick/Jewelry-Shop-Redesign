@@ -1,0 +1,19 @@
+@import "../../../theme.scss";
+
+header {
+    padding: 10px;
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .nav-item {
+            padding: 10px;
+            background-color: $themedark;  
+
+            a {
+                color: $fontlight;
+            }
+        }
+    }
+}
