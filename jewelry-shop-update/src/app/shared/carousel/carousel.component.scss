@@ -1,14 +1,11 @@
-.carousel-inner {
-   width: 100%;
-.carousel-item {
-    margin-right: 0;
-
-  .picsum-img-wrapper {
-
-
-    img {
-        max-width: 100%;;
+.carousel {
+    .carousel-inner {
+        .carousel-item {
+            .picsum-img-wrapper {
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
     }
-  }
-}
 }
