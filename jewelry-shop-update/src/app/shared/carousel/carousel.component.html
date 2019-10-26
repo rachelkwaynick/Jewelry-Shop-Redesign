@@ -1,22 +1,10 @@
-<ngb-carousel *ngIf="images">
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img [src]="images[0]" alt="Bracelet">
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img [src]="images[1]" alt="Earring">
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img [src]="images[2]"  alt="Necklace">
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img [src]="images[3]" alt="Rings">
-      </div>
-    </ng-template>
-  </ngb-carousel>
+
+<ngx-slick-carousel 
+  class="carousel" 
+  #slickModal="slick-carousel" 
+  [config]="slideConfig" 
+  >
+  <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+    <img src="{{ slide.img }}" alt="" width="100%">
+  </div>
+</ngx-slick-carousel>
